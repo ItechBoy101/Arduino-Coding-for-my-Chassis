@@ -72,12 +72,12 @@ void loop() {
 }
 
 //LEFT SIDE WHEEL
-/// FRONT LEFT in1_1 & in2_1 
-/// REAR RIGHT in3_1 & in4_1
+/// FRONT LEFT in1_1 & in2_1 - MOTOR 1
+/// REAR RIGHT in3_1 & in4_1 - MOTOR 2
 
 //RIGHT SIDE WHEEL
-/// FRONT RIGHT in1_2 & in2_2 
-/// REAR LEFT in3_2 & in4_2
+/// FRONT RIGHT in1_2 & in2_2 - MOTOR 3
+/// REAR LEFT in3_2 & in4_2 - MOTOR 4
 
 // DC motor enable pin is used for speed control; max_speed = 255,
 
