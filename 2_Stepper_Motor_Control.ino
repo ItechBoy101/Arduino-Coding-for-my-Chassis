@@ -26,14 +26,19 @@ void setup() {
   stepper1.moveTo(-initialSteps);
   stepper2.moveTo(initialSteps);
 
-  unsigned long startTime = millis();
-  while (millis() - startTime < 1000) {  // run for ~1 second
+  while (stepper1.distanceToGo() != 0 || stepper2.distanceToGo() != 0) {
     stepper1.run();
-    stepper2.run(); 
+    stepper2.run();
   }
-  stepper1.stop();
-  stepper2.stop();
-  delay(1000);  // short pause before main loop starts 
+  delay(1000);
+//   unsigned long startTime = millis();
+//   while (millis() - startTime < 1000) {  // run for ~1 second
+//     stepper1.run();
+//     stepper2.run(); 
+//   }
+//   stepper1.stop();
+//   stepper2.stop();
+//   delay(1000);  // short pause before main loop starts 
 
 }
 
