@@ -3,10 +3,20 @@
 # Arduino Mega 2560 as our MicroController
 
 1. Chassis used L298N driver motors, 4 DC motors and Omni Wheels.
+
 2. Collection System uses 2xDRV8825 with expansion boards, 2 NEMA (17 or 23) Stepper Motors(each motor needs a 1.6A as minimum current to be used)
-2.1. Stepper motor driver needs two power sources (1x5V supply & minimum of 12V for the motor)
+   2.1. Stepper motor driver needs two power sources (1x5V supply & minimum of 12V for the motor)
+   🔌 Power Supply Rules
+For NEMA 17:
+Driver supply: 12V or 24V
+Motor current: set to 1A–2A depending on motor label
+
+For NEMA 23:
+Driver supply: 24V or 36V
+Motor current: set to 2A–3.5A depending on motor label
+
 3. Lifitng Ramp System uses 2xServo Motors that produces high torque(metal gears servo motors)
-3.1. High Torque Servos
+   3.1. High Torque Servos
 ✅ Standard Operating Voltage
 4.8V – 6.0V
 This is the classic range for the majority of hobby-grade high-torque servos.
@@ -23,6 +33,3 @@ High-torque metal-gear servos can draw:
 
 2A – 3A peak each under stall load
 
-So you must:
-Use a separate BEC or servo power supply
-NEVER power servos directly from the Arduino 5V pin
