@@ -1,7 +1,7 @@
 // Arduino code to control a 4WD robot using two L298N motor drivers
 
 // Motor pins for L298N #1
-int enA1 = 2;  // PWM
+int enA1 = 2;  // PWM 
 int in1_1 = 22;
 int in2_1 = 24;
 int enB1 = 3;  // PWM
